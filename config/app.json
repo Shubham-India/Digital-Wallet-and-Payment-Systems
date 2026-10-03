@@ -1,0 +1,20 @@
+{
+  "dataDir": "data",
+  "logLevel": "INFO",
+  "maxFailedLogins": 5,
+  "passwordIterations": 20000,
+  "limits": {
+    "BASIC":    { "perTransactionRupees": 25000,  "dailyAmountRupees": 50000,   "dailyCount": 20 },
+    "PREMIUM":  { "perTransactionRupees": 100000, "dailyAmountRupees": 200000,  "dailyCount": 50 },
+    "MERCHANT": { "perTransactionRupees": 200000, "dailyAmountRupees": 1000000, "dailyCount": 200 }
+  },
+  "fraud": {
+    "reviewAmountRupees": 10000,
+    "rejectAmountRupees": 150000,
+    "velocityWindowSeconds": 60,
+    "velocityReviewCount": 5,
+    "velocityRejectCount": 10,
+    "failureWindowSeconds": 600,
+    "failureReviewCount": 3
+  }
+}
