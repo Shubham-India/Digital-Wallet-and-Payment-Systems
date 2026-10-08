@@ -78,4 +78,4 @@ private:
     static std::ostream* openLog(std::ofstream& f, const AppOptions& o, const std::string& dir);
 };
 
-} // namespace wallet
+}
